@@ -1,0 +1,20 @@
+ataque prota 4 direcciones
+	ataque prota disparo full vida
+
+establecer sistema de cambio de pantallas
+	pantalla get_sword
+	transicion entre pantallas
+
+implementar inventario
+
+implementar menu
+
+implementar carga/salvado (¿es posible?)
+
+dibujar correctamente la pantalla (inventario arriba, mapa abajo)
+
+implementar enemigo
+
+sustituir sprites
+
+crear pantalla carga
