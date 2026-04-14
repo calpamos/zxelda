@@ -1,5 +1,5 @@
-//zxelda v0.1a
-//16mar'26
+//zxelda v0.1b
+//07abr'26
 
 #include <stdio.h>
 
@@ -17,9 +17,9 @@
 
 void main (void) {
     init_pantalla();
-    cambiar_pantalla(PANTALLA_MENU);
+    cambiar_pantalla(PANTALLA_JUEGO);
 
-    while(!zx_break()) { //hasta pulsar break
+    while(!zx_break()) { //infinte loop
         switch(modo_app) {
             case PANTALLA_INTRO:
             break;
@@ -29,7 +29,10 @@ void main (void) {
 
             case PANTALLA_JUEGO:
                 calculo_frame();
-                animacion_hero();
+                check_warp();
+                mueve_enemigo();
+                animacion_enemigo();
+                update_attack();
             break;
 
             case PANTALLA_GAME_OVER:

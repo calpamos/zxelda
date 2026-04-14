@@ -1,4 +1,5 @@
-// config.h
+//zxelda v0.1b
+//07abr'26
 
 #define NUMERO_DE_VIDAS 1
 
@@ -12,7 +13,7 @@
 // offset de render del mapa en pantalla (chars)
 // centrado en x, alineado abajo en y
 // pantalla ZX: 32x24 chars, tile: 2x2 chars, mapa: 14x9 tiles
-#define MAPA_OX 2   // (32 - 14*2) / 2
+#define MAPA_OX 0   // 16*2 = 32 = ancho pantalla ZX
 #define MAPA_OY 6   // 24 - 9*2
 
 // direcciones de cambio de mapa
